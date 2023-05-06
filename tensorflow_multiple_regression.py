@@ -176,6 +176,7 @@ print('executing Eagerly: {}'.format(eagerly_decision))
 #define columns names list
 col_names = ["Make","Model","Vehicle_Class","Engine_Size","Cylinders","Transmission","Fuel_Type","Fuel_Consumption_City","Fuel_Consumption_Hwy","Fuel_Consumption_Comb","Fuel_Consumption_Comb_mpg","CO2_Emissions"]
 
+#data can be downloaded from: https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles
 #Read dataframe and skip first raw that contain header
 df = pd.read_csv('CO2 Emissions_Canada.csv',names=col_names, header = None, skiprows = 1)
 
